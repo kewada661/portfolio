@@ -25,7 +25,8 @@ function App() {
         </div>
         <div className="thumbnailContainer">
           <img src={covers} className="thumbnail newsletters" alt="Newsletters Thumbnail" />
-        </div>      </div>
+        </div>
+      </div>
     </>
   )
 }
