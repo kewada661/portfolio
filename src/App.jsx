@@ -12,14 +12,12 @@ export default function App() {
   // const [count, setCount] = useState(0)
   return (
     <Routes>
-      <Route path="/portfolio">
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="portraiture" element={<Portraiture />} />
-        <Route path="kazan" element={<Kazan />} />
-        <Route path="boneboy" element={<Boneboy />} />
-        <Route path="newsletters" element={<Newsletters />} />
-      </Route>
+      <Route path="/portfolio" element={<Home />} />
+      <Route path="/portfolio/about" element={<About />} />
+      <Route path="/portfolio/portraiture" element={<Portraiture />} />
+      <Route path="/portfolio/kazan" element={<Kazan />} />
+      <Route path="/portfolio/boneboy" element={<Boneboy />} />
+      <Route path="/portfolio/newsletters" element={<Newsletters />} />
     </Routes>
   )
 }
