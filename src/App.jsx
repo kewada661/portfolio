@@ -12,7 +12,8 @@ export default function App() {
   // const [count, setCount] = useState(0)
   return (
     <Routes>
-      <Route path="/portfolio" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/portfolio/" element={<Home />} />
       <Route path="/portfolio/about" element={<About />} />
       <Route path="/portfolio/portraiture" element={<Portraiture />} />
       <Route path="/portfolio/kazan" element={<Kazan />} />
