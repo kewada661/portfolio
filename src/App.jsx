@@ -14,11 +14,11 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio/" element={<Home />} />
-      <Route path="/portfolio/about" element={<About />} />
-      <Route path="/portfolio/portraiture" element={<Portraiture />} />
-      <Route path="/portfolio/kazan" element={<Kazan />} />
-      <Route path="/portfolio/boneboy" element={<Boneboy />} />
-      <Route path="/portfolio/newsletters" element={<Newsletters />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/portraiture" element={<Portraiture />} />
+      <Route path="/kazan" element={<Kazan />} />
+      <Route path="/boneboy" element={<Boneboy />} />
+      <Route path="/newsletters" element={<Newsletters />} />
     </Routes>
   )
 }

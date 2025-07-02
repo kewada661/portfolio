@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router'
+import { Outlet, Link } from 'react-router'
 
 import gorilla from '../assets/portraiture/gorilla.png'
 import pattern from '../assets/kazan/pattern.png'
@@ -11,24 +11,24 @@ export default function Home () {
       <div>
         <h1 className="title">kendall wada</h1>
         <div className="thumbnailContainer">
-          <a href="/portfolio/portraiture">
+          <Link to="/portraiture">
               <img src={gorilla} className="thumbnail portraiture" alt="Portraiture Thumbnail" />
-          </a>
+          </Link>
         </div>
         <div className="thumbnailContainer">
-          <a href="/portfolio/kazan">
+          <Link to="/kazan">
            <img src={pattern} className="thumbnail kazan" alt="Kazan Thumbnail" />
-          </a>
+          </Link>
         </div>
         <div className="thumbnailContainer">
-          <a href="/portfolio/boneboy">
+          <Link to="/boneboy">
             <img src={stomach} className="thumbnail boneboy" alt="Boneboy Thumbnail" />
-          </a>
+          </Link>
         </div>
         <div className="thumbnailContainer">
-          <a href="/portfolio/newsletters">
+          <Link to="/newsletters">
             <img src={covers} className="thumbnail newsletters" alt="Newsletters Thumbnail" />
-          </a>
+          </Link>
         </div>
       </div>
       <Outlet/>

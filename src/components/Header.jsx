@@ -1,13 +1,19 @@
+import { Link } from "react-router"
+
 export default function Header () {
+  console.log(location);
+  location.reload;
     return (
       <header>  
         <nav>
           <dl className="navList">
             <dt>
-              {location.pathname != "/portfolio/about" ? <a href="/portfolio/about">About</a> : <div/> }
+              {/* {location.hash == "#/about" ? <div/> : <Link to="/about">About</Link> } */}
+              <Link to="/about">About</Link>
             </dt>
             <dt>
-              {location.pathname != "/portfolio/" ? <a href="/portfolio/">Home</a> : <div/> }
+              {/* {location.hash == "#/" || location.hash == "" ? <div/> : <Link to="/">Home</Link> } */}
+              <Link to="/">Home</Link>
             </dt>
           </dl>
         </nav>
