@@ -1,39 +1,39 @@
 
-function Project() {
+function Project({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>Empty Project</h1>
         </div>
     )
 }
 
-function Portraiture() {
+function Portraiture({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>Portraiture</h1>
         </div>
     )
 }
 
-function Kazan() {
+function Kazan({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>Kazan</h1>
         </div>
     )
 }
 
-function Boneboy() {
+function Boneboy({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>Boneboy</h1>
         </div>
     )
 }
 
-function Newsletters() {
+function Newsletters({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>Newsletters</h1>
         </div>
     )

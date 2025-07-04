@@ -1,6 +1,6 @@
-function About() {
+function About({ ref }) {
     return (
-        <div>
+        <div ref={ref}>
             <h1>About Me</h1>
         </div>
     )

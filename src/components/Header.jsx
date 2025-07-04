@@ -1,10 +1,11 @@
 import { Link } from "react-router"
 
 export default function Header () {
-  console.log(location);
-  location.reload;
     return (
-      <header>  
+      <header> 
+        <Link to="/" className="brand">
+          <h1>kendall wada</h1>
+        </Link>
         <nav>
           <dl className="navList">
             <dt>

@@ -5,11 +5,10 @@ import pattern from '../assets/kazan/pattern.png'
 import stomach from '../assets/boneboy/stomach.png'
 import covers from '../assets/newsletters/covers.png'
 
-export default function Home () {
+export default function Home ({ ref }) {
     return (
     <>
-      <div>
-        <h1 className="title">kendall wada</h1>
+      <div ref={ref}>
         <div className="thumbnailContainer">
           <Link to="/portraiture">
               <img src={gorilla} className="thumbnail portraiture" alt="Portraiture Thumbnail" />
