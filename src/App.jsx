@@ -8,7 +8,6 @@ import { Kazan, Portraiture, Boneboy, Newsletters } from './pages/Projects.jsx'
 import { TransitionProvider } from './context/TransitionContext.jsx'
 import TransitionComponent from './components/Transition.jsx'
 
-
 export default function App() {
   // const [count, setCount] = useState(0)
   const homeRef = useRef(null);
@@ -17,9 +16,10 @@ export default function App() {
   const kazanRef = useRef(null);
   const boneboyRef = useRef(null);
   const newslettersRef = useRef(null);
+  const containerRef = useRef(null);
 
   return (
-    <TransitionProvider>
+    // <TransitionProvider>
       <Routes>
         <Route
           path="/" 
@@ -48,7 +48,7 @@ export default function App() {
         <Route 
           path="/portraiture" 
           element={
-            <TransitionComponent nodeRef={portraitureRef}>
+            <TransitionComponent nodeRef={portraitureRef} container={"portraitureContainer"}>
                 <Portraiture ref={portraitureRef}/>
             </TransitionComponent>
           } 
@@ -78,7 +78,7 @@ export default function App() {
           } 
         />
       </Routes>
-    </TransitionProvider>
+    // </TransitionProvider>
 
   )
 }

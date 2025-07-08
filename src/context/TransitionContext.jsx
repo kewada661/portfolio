@@ -1,19 +1,19 @@
-import { useState, createContext, createRef } from "react";
+import { useRef, createContext } from "react";
 
-export const TransitionContext = createContext({ nodeRef: null, completed: false});
+export const TransitionContext = createContext({ containerId: "" });
 
 export const TransitionProvider = ({ children }) => {
-  const [completed, setCompleted] = useState(false);
-
-  const toggleCompleted = (value) => {
-    setCompleted(value);
+  // const [containerId, setContainerId] = useState(false);
+  const containerId = useRef("");
+  const setContainerId = (value) => {
+    containerId.current = value;
   };
 
   return (
     <TransitionContext
       value={{
-        toggleCompleted,
-        completed,
+        setContainerId,
+        containerId,
       }}
     >
       {children}
